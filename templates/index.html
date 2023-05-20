@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraud Detection App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        h1 {
+            color: #666;
+            padding:50px;
+        }
+        
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+        
+        label {
+            display: inline-block;
+            width: 200px;
+            text-align: right;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        input[type=number] {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Jatayu Demo App</h1>
+    <form method="POST" action="/app1/predict">
+        <h2>MEDICAL BILLING - Performing unnecessary services for financial gain by showing them as a medical necessity</h2>
+        <h2>Enter the number of time these services are used:</h2>
+        <label for="service_code_1">Allergy Testing/ Service Code 1:</label>
+        <input type="number" name="service_code_1" required><br><br>
+        <label for="service_code_2">Diagnostic Imaging/ Service Code 2:</label>
+        <input type="number" name="service_code_2" required><br><br>
+        <label for="service_code_3">Pathology Services/ Service Code 3:</label>
+        <input type="number" name="service_code_3" required><br><br>
+        <label for="service_code_4">Cardiac Testing/ Service Code 4:</label>
+        <input type="number" name="service_code_4" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraud Detection Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        h1 {
+            color: #666;
+        }
+        
+        a {
+            display: block;
+            margin-top: 20px;
+        }
+        
+        a:hover {
+            color: #4CAF50;
+        }
+        
+    </style>
+</head>
+<body>
+    {% if prediction %}
+        <h1>Fraud Detected</h1>
+    {% else %}
+        <h1>No Fraud Detected</h1>
+    {% endif %}
+    <a href="/app1/predict">Try again</a>
+</body>
+</html>
